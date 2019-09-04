@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <string.h>
+  int main(){
+      int sochuc,sodv;
+      char chuoichuc[100];
+      char chuoidv[100];
+      printf("=========================");
+      printf("\n Nhập số hàng chục: ");
+      scanf("%d",&sochuc);
+      printf("\n Nhập số hàng đơn vị: ");
+      scanf("%d",&sodv); 
+           switch (sochuc)
+           {
+            case 0: strcpy(chuoichuc,"");break;	
+            case 1: strcpy(chuoichuc,"Muoi");break;
+            case 2: strcpy(chuoichuc,"Hai");break;
+            case 3: strcpy(chuoichuc,"Ba");break;
+            case 4: strcpy(chuoichuc,"Bon");break;
+            case 5: strcpy(chuoichuc,"Nam");break;
+            case 6: strcpy(chuoichuc,"Sau");break;
+            case 7: strcpy(chuoichuc,"Bay");break;
+            case 8: strcpy(chuoichuc,"Tam");break;
+            case 9: strcpy(chuoichuc,"Chin");break; 
+            }
+           switch (sodv)
+           {
+            case 0: strcpy(chuoidv,"Khong");break;
+            case 1: strcpy(chuoidv,"Mot");break;
+            case 2: strcpy(chuoidv,"Hai");break;
+            case 3: strcpy(chuoidv,"Ba");break;
+            case 4: strcpy(chuoidv,"Bon");break;
+            case 5: strcpy(chuoidv,"Nam");break;
+            case 6: strcpy(chuoidv,"Sau");break;
+            case 7: strcpy(chuoidv,"Bay");break;
+            case 8: strcpy(chuoidv,"Tam");break;
+            case 9: strcpy(chuoidv,"Chin");break; 
+            }
+            strcat(chuoichuc,chuoidv);
+            printf("\n Đọc là: "); puts(chuoichuc);
+            printf("========================="); 
+            return 0;
+            }
+            
+            
