@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+ int main(){
+      int diemToan,diemAnh,diemVan,diemTb;
+      char loai[100];
+      printf("\nNhap diem mon Toan: ");
+      scanf("%d",&diemToan);
+      printf("/nNhap diem mon Van: ");
+      scanf("%d",&diemAnh);
+      printf("\nNhap diem mon Anh: ");
+      scanf("%d",&diemVan);
+      diemTb = (diemToan + diemAnh + diemVan)/3;
+      if (diemTb>=90) {
+	  strcpy(loai," Xep loai E+");}
+      else if (diemTb<90&&diemTb>=80){strcpy(loai," Xep loai E");}    
+      else if (diemTb<80&&diemTb>=70){strcpy(loai," Xep loai A+");}
+      else if (diemTb<70&&diemTb>=60){strcpy(loai," Xep loai A");}
+      else if (diemTb<60&&diemTb>=50){strcpy(loai," Xep loai B");}
+      else {strcpy(loai," Ban Rot");}   
+      printf("%s",loai);
+      return 0;       
+ }
